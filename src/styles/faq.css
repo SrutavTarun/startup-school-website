@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Space+Grotesk:wght@700&display=swap");
 
 .h1_font {
-	/**Found no 'Helvetica Neue' font that matched the figma design, this is the best that I could find */
+	/**Found no 'Helvetica Neues' font that matched the figma design, this is the best that I could find */
 	font-family: "Geologica", sans-serif;
 	font-size: 25px;
 	font-weight: 500;
@@ -15,6 +15,6 @@
 	font-size: 52px;
 	font-weight: 700;
 	line-height: 66px;
-	letter-spacing: 0em;
+	letter-spacing: 0;
 	text-align: center;
 }
