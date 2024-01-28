@@ -1,7 +1,17 @@
-import React from 'react'
+import "../styles/faq.css"
+import Accordion from "./utils/Accordion.jsx";
+import faqData from "../data/faqData.js";
 
 export default function Faq() {
   return (
-    <div>Faq</div>
+  <>
+    <h1 className="h1_font">FAQ</h1>
+    <h2 className="h2_font">Learn more about through us FAQ</h2>
+    <br/>
+    <section>
+      <Accordion data={faqData}/>
+    </section>
+  </>
   )
 }
+

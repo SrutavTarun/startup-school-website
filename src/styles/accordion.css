@@ -1,0 +1,56 @@
+.accordion_wrapper {
+    font-family: "Geologica", serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+    @apply my-4 text-center overflow-hidden;
+    max-width: 1300px;
+}
+
+.accordion_wrapper .question-container {
+    width: 100%;
+    @apply px-8 py-3 max-sm:px-4;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.question-container.active{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.accordion_wrapper .question-container:hover{
+    background: #d5d5d5;
+}
+
+.accordion_wrapper .arrow {
+    transition: rotate .1s ease-in-out;
+}
+
+.accordion_wrapper .arrow.active {
+    rotate: 45deg;
+    border-color: transparent;
+}
+
+.accordion_wrapper .answer-container {
+    padding: 0 1rem;
+    transition: height .3s ease-in-out;
+}
+
+.accordion_wrapper .answer-content {
+    padding: 1rem 0;
+    font-size: 18px;
+    font-style: italic;
+}

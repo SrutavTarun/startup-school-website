@@ -1,0 +1,23 @@
+/**Main title and sub title font styles */
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Space+Grotesk:wght@700&display=swap");
+
+.h1_font {
+	/**Couldn't find the 'Helvetica Neues' font that used in the figma design, this is the best that I could find */
+	font-family: "Geologica", sans-serif;
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 31px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	@apply text-center text-ttOrange font-semibold;
+}
+
+.h2_font {
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 52px;
+	font-weight: 700;
+	line-height: 66px;
+	letter-spacing: 0;
+	text-align: center;
+	@apply text-center font-bold mx-24 max-sm:text-[30px] max-sm:mx-[10%];
+}

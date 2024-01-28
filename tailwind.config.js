@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    colors: {
+      ttOrange: '#F56E0F',
+    },
     extend: {},
   },
   plugins: [],
