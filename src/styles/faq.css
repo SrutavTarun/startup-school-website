@@ -1,7 +1,8 @@
+/**Main title and sub title font styles */
 @import url("https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Space+Grotesk:wght@700&display=swap");
 
 .h1_font {
-	/**Found no 'Helvetica Neues' font that matched the figma design, this is the best that I could find */
+	/**Couldn't find the 'Helvetica Neues' font that used in the figma design, this is the best that I could find */
 	font-family: "Geologica", sans-serif;
 	font-size: 25px;
 	font-weight: 500;
