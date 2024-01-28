@@ -4,19 +4,17 @@
     font-weight: 700;
     line-height: 29px;
     letter-spacing: 0;
-    text-align: center;
     width: 80%;
     margin: auto;
-    overflow: hidden;
     border-radius: 10px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
-    @apply my-4;
+    @apply my-4 text-center overflow-hidden;
     max-width: 1300px;
 }
 
 .accordion_wrapper .question-container {
     width: 100%;
-    @apply px-8 py-3;
+    @apply px-8 py-3 max-sm:px-4;
     text-align: left;
     display: flex;
     align-items: center;
@@ -26,7 +24,7 @@
     background: transparent;
     border: none;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
 }
 
 .question-container.active{
