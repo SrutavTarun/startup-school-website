@@ -8,6 +8,7 @@
 	line-height: 31px;
 	letter-spacing: 0.1em;
 	text-align: center;
+	@apply text-center text-ttOrange font-semibold;
 }
 
 .h2_font {
@@ -17,4 +18,5 @@
 	line-height: 66px;
 	letter-spacing: 0;
 	text-align: center;
+	@apply text-center font-bold mx-24 max-sm:text-[30px] max-sm:mx-[10%];
 }

@@ -11,6 +11,7 @@
     border-radius: 10px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
     @apply my-4;
+    max-width: 1300px;
 }
 
 .accordion_wrapper .question-container {
