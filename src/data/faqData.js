@@ -16,7 +16,7 @@ const faqData = [
 		answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel urna ege tincidunt, ultricies nunc quis, aliquam nisl.'
 	},
 	{
-		question: 'Question5',
+		question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel urna ege tincidun',
 		answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel urna ege tincidunt, ultricies nunc quis, aliquam nisl.'
 	}
 ]
