@@ -27,7 +27,7 @@ export default function Highlights() {
             <div className="high-head">Networking</div>
             <div className="high-text">
               Connect with a vibrant community of like-minded individuals,
-              mentors, and potential collaborators to enrich your
+              mentors and potential collaborators to enrich your
               entrepreneurial network.
             </div>
           </div>
