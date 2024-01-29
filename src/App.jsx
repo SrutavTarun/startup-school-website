@@ -19,7 +19,7 @@ function App() {
       <About/>
       <Programs/>
       <Highlights/>
-      <Mentors/>
+      {/* <Mentors/> */}
       <Faq/>
       <Contact/>
       <Footer/>
