@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@100&display=swap");
+
 #highlights {
   display: flex;
   flex-direction: column;
@@ -11,9 +13,9 @@
 .high-title {
   text-align: center;
   color: #f56e0f;
-  font-family: "Helvetica Neue";
+  font-family: "Open sans";
   font-weight: 500;
-  font-size: 25px;
+  font-size: 24px;
 
   @media (max-width: 468px) {
     font-size: 20px;
@@ -87,12 +89,12 @@
 }
 
 .high-text {
-  font-family: "Helvetica Neue";
+  font-family: "Open sans";
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   color: #929292;
 
   @media (max-width: 1024px) {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
