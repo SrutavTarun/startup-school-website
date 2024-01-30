@@ -1,0 +1,316 @@
+.desktop-4,
+.desktop-4 * {
+  box-sizing: border-box;
+}
+.desktop-4 {
+  background: #ffffff;
+  width: 1440px;
+  height: 932px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mentors {
+  color: #f56e0f;
+  text-align: center;
+  font-family: "HelveticaNeue-Medium", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+  left: 647px;
+  top: 115px;
+  width: 146px;
+  height: 38px;
+}
+
+.meet-our-experts {
+  color: #000000;
+  text-align: center;
+  font-family: "SpaceGrotesk-Bold", sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  position: absolute;
+  left: 238px;
+  top: 167px;
+  width: 964px;
+  height: 81px;
+}
+
+.frame-5 {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 165px;
+  top: 308px;
+}
+
+.group-12 {
+  flex-shrink: 0;
+  width: 240px;
+  height: 360px;
+  position: relative;
+}
+
+.rectangle-18 {
+  background: #ffffff;
+  width: 263px;
+  height: 397px;
+  position: absolute;
+  left: -11px;
+  top: -20px;
+}
+
+.ellipse-2 {
+  border-radius: 50%;
+  position: absolute;
+  right: 4.17%;
+  left: 4.17%;
+  width: 91.67%;
+  bottom: 36.11%;
+  top: 2.78%;
+  height: 61.11%;
+  object-fit: cover;
+}
+
+.ellipse-3 {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #e0e0e0;
+  border-width: 1.5px;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 33.33%;
+  top: 0%;
+  height: 66.67%;
+}
+
+.full-name {
+  color: #000000;
+  text-align: center;
+  font-family: "HelveticaNeue-Medium", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  position: absolute;
+  right: 12.5%;
+  left: 12.5%;
+  width: 75%;
+  bottom: 15.28%;
+  top: 72.22%;
+  height: 12.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.designation-position-company {
+  color: #a3a3a3;
+  text-align: center;
+  font-family: "HelveticaNeue-Medium", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  right: 1.25%;
+  left: 1.25%;
+  width: 97.5%;
+  bottom: 0%;
+  top: 87.5%;
+  height: 12.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rectangle-20,
+.rectangle-20 * {
+  box-sizing: border-box;
+}
+.rectangle-20 {
+  background: #262626;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px 10px 0px 0px;
+  width: 696px;
+  height: 59px;
+  position: relative;
+}
+.mentor,
+.mentor * {
+  box-sizing: border-box;
+}
+.mentor {
+  color: #919191;
+  text-align: center;
+  font-family: "HelveticaNeue-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  width: 277px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-section {
+  display: flex;
+  flex-direction: row;
+}
+.photo-div {
+  display: flex;
+  flex-direction: column;
+  
+  justify-content:space-around;
+}
+.ellipse-new,
+.ellipse-new * {
+  box-sizing: border-box;
+}
+.ellipse-new {
+  border-radius: 50%;
+  margin: 20px;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  object-fit: cover;
+}
+.at-startup-school-we-believe-in-the-power-of-every-idea-and-the-potential-within-every-individual-our-mission-is-to-bridge-the-gap-between-aspiring-entrepreneurs-and-their-dreams-with-a-focus-on-mentorship-and-practical-learning-we-are-here-to-guide-beginners-on-a-transformative-journey-to-becoming-successful-founders, .at-startup-school-we-believe-in-the-power-of-every-idea-and-the-potential-within-every-individual-our-mission-is-to-bridge-the-gap-between-aspiring-entrepreneurs-and-their-dreams-with-a-focus-on-mentorship-and-practical-learning-we-are-here-to-guide-beginners-on-a-transformative-journey-to-becoming-successful-founders * {
+    box-sizing: border-box;
+    }
+.at-startup-school-we-believe-in-the-power-of-every-idea-and-the-potential-within-every-individual-our-mission-is-to-bridge-the-gap-between-aspiring-entrepreneurs-and-their-dreams-with-a-focus-on-mentorship-and-practical-learning-we-are-here-to-guide-beginners-on-a-transformative-journey-to-becoming-successful-founders {
+    text-align: left;
+    font-family: '-', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    width: 409px;
+    height: 197px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start}
+
+.at-startup-school-we-believe-in-the-power-of-every-idea-and-the-potential-within-every-individual-our-mission-is-to-bridge-the-gap-between-aspiring-entrepreneurs-and-their-dreams-with-a-focus-on-mentorship-and-practical-learning-we-are-here-to-guide-beginners-on-a-transformative-journey-to-becoming-successful-founders-span {
+    color: #5e5e5e;
+    font-family: 'HelveticaNeue-Medium', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    }
+
+.at-startup-school-we-believe-in-the-power-of-every-idea-and-the-potential-within-every-individual-our-mission-is-to-bridge-the-gap-between-aspiring-entrepreneurs-and-their-dreams-with-a-focus-on-mentorship-and-practical-learning-we-are-here-to-guide-beginners-on-a-transformative-journey-to-becoming-successful-founders-span2 {
+    color: #f56e0f;
+    font-family: 'HelveticaNeue-Bold', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    }
+
+.at-startup-school-we-believe-in-the-power-of-every-idea-and-the-potential-within-every-individual-our-mission-is-to-bridge-the-gap-between-aspiring-entrepreneurs-and-their-dreams-with-a-focus-on-mentorship-and-practical-learning-we-are-here-to-guide-beginners-on-a-transformative-journey-to-becoming-successful-founders-span3 {
+    color: #5e5e5e;
+    font-family: 'HelveticaNeue-Medium', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    }
+
+
+.full-name,
+.full-name * {
+  box-sizing: border-box;
+}
+.full-name {
+  color: #000000;
+  text-align: center;
+  font-family: "HelveticaNeue-Medium", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  position: relative;
+  width: 180px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.designation-position-company,
+.designation-position-company * {
+  box-sizing: border-box;
+}
+.designation-position-company {
+  color: #a3a3a3;
+  text-align: center;
+  font-family: "HelveticaNeue-Medium", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  width: 234px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.photo-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ellipse-new {
+    border-radius: 50%;
+    margin-top: 60px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: -120px; /* Adjust as needed */
+  }
+  
+  .info-div {
+    text-align: center;
+  }
+
+.carbon-close-filled,
+.carbon-close-filled * {
+  box-sizing: border-box;
+}
+.carbon-close-filled {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  position: relative;
+  overflow: visible;
+}
+
+.rectangle-19,
+.rectangle-19 * {
+  box-sizing: border-box;
+}
+.rectangle-19 {
+  background: #fffafa;
+  border-radius: 10px;
+  
+  width: 696px;
+  height: 500px;
+  position: relative;
+  box-shadow: 20px 20px 20px 20px rgba(0.2, 0.2, 0.2, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.group-122 {
+  height: auto;
+  position: absolute;
+  right: 48.24%;
+  left: 48.26%;
+  width: 3.5%;
+  bottom: 14.1%;
+  top: 85.19%;
+  height: 0.71%;
+  overflow: visible;
+}
+
+.text-div{
+    margin-top: 90px;
+    margin-left: 40px;
+}
+
