@@ -1,7 +1,11 @@
 import React from 'react'
 
-export default function Highlights() {
+function Highlights() {
   return (
-    <div>Highlights</div>
+    <div>
+      
+    </div>
   )
 }
+
+export default Highlights

@@ -122,7 +122,7 @@ const Card = ({ item, onClose }) => (
   </div>
 );
 
-export default function Mentors() {
+export default function MentorsNew() {
   
   // Conditionally apply classes to body based on card state
 
@@ -202,14 +202,14 @@ export default function Mentors() {
                   className="m-0 mb-10  sm:flex flex-col w-56 h-full "
                 >
                   <img
-  className="h-48 w-48 mt-8 rounded-full"
+  className="h-48  md:ml-4 w-48 mt-8 rounded-full"
   src={item.image}
   alt="image"
 />
 
                   <div className="flex flex-col justify-center items-center w-full p-3 text-center">
-                    <p className="text-md font-bold">{item.name}</p>
-                    <p className="text-xs font-light">{item.position}</p>
+                    <p className="text-md text-ne font-bold">{item.name}</p>
+                    <p className="text-xs text-neutral-500 font-medium">{item.position}</p>
                  
                   </div>
                 </div>
