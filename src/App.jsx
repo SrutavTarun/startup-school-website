@@ -13,8 +13,7 @@ function App() {
 
   return (
     <>
-    
-    <h1>hello</h1>
+    <div className='flex flex-col w-screen'>
       <Home/>
       <About/>
       <Programs/>
@@ -23,6 +22,8 @@ function App() {
       <Faq/>
       <Contact/>
       <Footer/>
+    </div>
+      
     </>
   )
 }
