@@ -102,7 +102,6 @@ const Card = ({ item, onClose }) => (
         </div>
       </div>
 
-
       <div className="w-4/5 md:w-3/4 mt-12 pl-4">
         <span className="text-xs sm:text-mtext-zinc-600 md:text-xs lg:text-mtext-zinc-600 xl:text-xl font-['Helvetica Neue']">
           At{" "}
@@ -123,11 +122,8 @@ const Card = ({ item, onClose }) => (
 );
 
 export default function MentorsNew() {
-  
   // Conditionally apply classes to body based on card state
 
-
- 
   const [isCardOpen, setCardOpen] = useState(false);
   const [position, setPosition] = useState({ top: 0, left: 0 });
   const targetRef = useRef(null);
@@ -181,7 +177,7 @@ export default function MentorsNew() {
           Meet Our Experts
         </div>
 
-        <div className="flex flex-row h-92 mt-10 w-2/3 justify-center  ">
+        <div className="mr-12 md:flex flex-row h-92  w-2/3 justify-center  ">
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             slidesPerView={noSlides}
@@ -199,18 +195,19 @@ export default function MentorsNew() {
                 <div
                   onClick={handleDivClick}
                   ref={targetRef}
-                  className="m-0 mb-10  sm:flex flex-col w-56 h-full "
+                  className="m-0 mb-10  sm:flex flex-col items-center w-48 h-full "
                 >
                   <img
-  className="h-48  md:ml-4 w-48 mt-8 rounded-full"
-  src={item.image}
-  alt="image"
-/>
+                    className="h-44 md:ml-4 w-44 mt-8 rounded-full ring-2 ring-gray-400 ring-offset-4"
+                    src={item.image}
+                    alt="image"
+                  />
 
                   <div className="flex flex-col justify-center items-center w-full p-3 text-center">
                     <p className="text-md text-ne font-bold">{item.name}</p>
-                    <p className="text-xs text-neutral-500 font-medium">{item.position}</p>
-                 
+                    <p className="text-xs text-neutral-500 font-medium">
+                      {item.position}
+                    </p>
                   </div>
                 </div>
               </SwiperSlide>
