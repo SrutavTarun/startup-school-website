@@ -16,9 +16,15 @@ function App() {
 
   return (
     <>
-  
+    {/* <h1>hello</h1>
+      <Home/>
+      <About/> */}
+      <Programs/>
+      <Highlights/>
       <MentorsNew />
-    
+      <Faq/>
+      <Contact/>
+      <Footer/>
     </>
   )
 }
