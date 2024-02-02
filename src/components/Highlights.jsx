@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/highlights.css";
 
-export default function Highlights() {
+function Highlights() {
   return (
     <>
       <div id="highlights">
@@ -36,3 +36,5 @@ export default function Highlights() {
     </>
   );
 }
+
+export default Highlights
