@@ -2,6 +2,7 @@ import React from 'react';
 
 export default function Contact() {
   const bg = {
+    paddingTop: '2rem',
     backgroundColor: '#2d2d2d',
     minHeight: '75vh',
   };
@@ -9,12 +10,27 @@ export default function Contact() {
   const bg1 = {
     backgroundColor: '#4b4b4b',
   };
+  const textOrange = {
+    color: '#F56E0F'
+  };
+
+  const textWhite = {
+    color: '#fff'
+  };
+
+
+
+  const bgbuttn = {
+    backgroundColor: '#F56E0F',
+    color: '#fff',
+    marginBottom: '2rem',
+  };
 
   return (
     
-      <div style={bg} className="w-[100vw] flex flex-col items-center justify-center">
-        <p className='my-4 helvetic-nue text-orange-500 text-2xl md:text-3xl tracking-wider text-center'>CONTACT</p>
-        <p className='mb-3 space-grotesk text-white font-bold text-3xl md:text-4xl lg:text-5xl text-center leading-8 lg:leading-10'>Any further queries ?</p>
+      <div style={bg} className="w-full flex flex-col items-center justify-center ">
+        <p style={textOrange} className='my-4 helvetic-nue text-orange-500 text-2xl md:text-3xl tracking-wider text-center'>CONTACT</p>
+        <p style={textWhite} className='mb-3 space-grotesk text-white font-bold text-3xl md:text-4xl lg:text-5xl text-center leading-8 lg:leading-10'>Any further queries ?</p>
 
         <form action="" method="">
 
@@ -30,7 +46,7 @@ export default function Contact() {
 
             </div>
 
-            <button className="space-grotesk w-32 lg:w-40 h-14 lg:h-16 bg-orange-500 text-white font-bold text-lg lg:text-2xl tracking-wider">SEND</button>
+            <button style={bgbuttn} className=" space-grotesk w-32 lg:w-40 h-14 lg:h-16 bg-orange-500 text-white font-bold text-lg lg:text-2xl tracking-wider">SEND</button>
 
           </div>
         </form>
