@@ -67,6 +67,12 @@ ul {
     display: none;
 }
 
+@media screen and (max-width: 768px) {
+  .navbar a{
+    font-size: 0.7em;
+  }
+}
+
 @media screen and (max-width: 640px) {
   .navbar-not-mobile {
     display: none;

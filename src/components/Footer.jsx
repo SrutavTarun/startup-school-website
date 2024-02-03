@@ -35,10 +35,10 @@ export default function Footer() {
 
   return (
     <>
-      <div style={bg} className="m-auto">
+      <div style={bg} className="">
         <div className="flex flex-col lg:flex-row px-4 lg:px-10 py-5 lg:py-10 mx-4 lg:mx-20 justify-between items-center">
           <div className="mb-5 lg:mb-0 lg:mr-10">
-            <img src={Logo} alt="logowhite" />
+            <img src={Logo} alt="logo" />
           </div>
           <div style={foot.container} className="justify-center items-center">
             <div style={foot.val} className="flex flex-col px-4 lg:px-10 mb-5 lg:mb-0">

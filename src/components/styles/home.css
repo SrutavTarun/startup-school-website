@@ -3,6 +3,7 @@
 
 .home{
     background-image: url("../../assets/home1.png");
+    /* width: 100%; */
 }
 
 .home-white-box{
@@ -56,8 +57,42 @@
     background-color: #262626;
 }
 
-@media screen and (max-width: 760px){
-    
+@media screen and (max-width: 1024px){
+    .home-white-box{
+        margin: 0em 3em 8em 3em;
+        padding: 8em 2em 4em 2em;
+    }
+    .home-text-1{
+        font-size: 3rem;
+        line-height: 3.5rem; 
+        margin: 1.5em 0em 1em 0em;
+    }
+    .home-text-2{
+        font-size: 1em;    
+        margin: 0.8em 1em 0em 1em;
+    }
+    .home-button{
+        font-size: 1.5em;
+        padding: 0.5em 1em 0.5em 1em;
+        margin: 3em auto 1.5em auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .home-text-1{
+        font-size: 2rem;
+        line-height: 2.5rem; 
+        margin: 1.5em 0em 1em 0em;
+    }
+    .home-text-2{
+        font-size: 0.8em;    
+        margin: 0.8em 1em 0em 1em;
+    }
+    .home-button{
+        font-size: 1em;
+        padding: 0.5em 1em 0.5em 1em;
+        margin: 3em auto 1.5em auto;
+    }
 }
 
 @media screen and (max-width: 640px) {
