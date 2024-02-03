@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #262626;
+    color: white;
+    overflow: hidden;
+    width: 100%;
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 0 2em 0 0;
+    z-index: 100;
+}
+
+.navbar img{
+    width: 50%;
+    margin: 0.5em 0em 0.5em 1em;
+}
+
+.navbar ul{
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.navbar ul a {
+    float: left; 
+    display: block; 
+    color: white; 
+    text-align: center;
+    padding: 0.5em 1em; 
+    margin: 0 0.5em;
+    text-decoration: none; 
+}
+
+.navbar .contact-btn {
+    background-color:#F56E0F;
+    border: 1px solid #262626;
+ }
+
+.navbar .contact-btn:hover {
+   background-color: #262626;
+   border: 1px solid white;
+}

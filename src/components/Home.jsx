@@ -1,19 +1,22 @@
 import React from "react";
 import "./styles/home.css";
 
-import backgroundImage from "../assets/home1.png";
-
 export default function Home() {
   return (
     <>
-      <div
-        className="home w-full h-full bg-cover bg-center"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-      >
-        <div>
-          <div className="text-black text-center font-SpaceGrotesk font-bold text-4xl">
-          From Beginner to Founder: Join Startup School for a transformative journey.
+      <div className="home w-full h-full bg-cover bg-center" style={{}}>
+        <div className="home-white-box">
+          <div className="home-text-1">
+            From Beginner to Founder: Join{" "}
+            <span className="home-Startup-School">Startup School</span> for a
+            transformative journey.
           </div>
+          <div className="home-text-2">
+            We welcome you with open arms, providing mentorship every step of
+            the way. Turn your ideas into reality - let's build your startup
+            together!
+          </div>
+          <div className="home-button">GET STARTED</div>
         </div>
       </div>
     </>

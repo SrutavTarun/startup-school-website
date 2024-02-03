@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from "../assets/startupschoolwhitelogo.svg"
 
 export default function Footer() {
   const bg = {
@@ -37,7 +38,7 @@ export default function Footer() {
       <div style={bg} className="m-auto">
         <div className="flex flex-col lg:flex-row px-4 lg:px-10 py-5 lg:py-10 mx-4 lg:mx-20 justify-between items-center">
           <div className="mb-5 lg:mb-0 lg:mr-10">
-            <img src="/images/startupschoolwhitelogo.svg" alt="logowhite" />
+            <img src={Logo} alt="logowhite" />
           </div>
           <div style={foot.container} className="justify-center items-center">
             <div style={foot.val} className="flex flex-col px-4 lg:px-10 mb-5 lg:mb-0">
