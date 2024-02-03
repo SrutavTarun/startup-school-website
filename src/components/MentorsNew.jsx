@@ -6,6 +6,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import {client} from '../client'
+import imageUrlBuilder from "@sanity/image-url";
 
 // Import Swiper styles
 import "swiper/css";
@@ -13,66 +14,19 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-const data = [
-  {
-    id: 1,
-    name: "John Doe",
-    designation: "Engineer",
-    position: "Head and ceo ceo ceo of Engineering",
-    company: "Tata",
-    image:
-      "https://static.vecteezy.com/system/resources/previews/005/005/788/original/user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg",
-  },
-  {
-    id: 2,
-    name: "John Doe",
-    designation: "Engineer",
-    position: "Head",
-    company: "Tata",
-    image:
-      "https://static.vecteezy.com/system/resources/previews/005/005/788/original/user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg",
-  },
-  {
-    id: 3,
-    name: "John Doe",
-    designation: "Engineer",
-    position: "Head",
-    company: "Tata",
-    image:
-      "https://static.vecteezy.com/system/resources/previews/005/005/788/original/user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg",
-  },
-  {
-    id: 4,
-    name: "John Doe",
-    designation: "Engineer",
-    position: "Head",
-    company: "Tata",
-    image:
-      "https://t4.ftcdn.net/jpg/03/26/98/51/360_F_326985142_1aaKcEjMQW6ULp6oI9MYuv8lN9f8sFmj.jpg",
-  },
-  {
-    id: 5,
-    name: "John Doe",
-    designation: "Engineer",
-    position: "Head",
-    company: "Tata",
-    image:
-      "https://static.vecteezy.com/system/resources/previews/005/005/788/original/user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg",
-  },
-  {
-    id: 6,
-    name: "John Doe",
-    designation: "Engineer",
-    position: "Head",
-    company: "Tata",
-    image:
-      "https://static.vecteezy.com/system/resources/previews/005/005/788/original/user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg",
-  },
-];
+
+const builder = imageUrlBuilder(client);
+
+const urlFor = (source) => {
+  // console.log(builder.image(source).url());
+  return builder.image(source);
+};
+
+
 
 // eslint-disable-next-line react/prop-types
 const Card = ({ item, onClose }) => (
-  <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 shadow-lg rounded-md z-50 w-full max-w-2xl overflow-y: auto">
+  <div className="absolute bg-[#ffffff] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 shadow-lg rounded-md z-50 w-full max-w-2xl overflow-y: auto">
     <div className="bg-neutral-800 w-full h-10 flex flex-row justify-between">
       <div className="m-2 text-center text-neutral-400 text-2xl font-medium font-['Helvetica Neue']">
         Mentor
@@ -87,7 +41,7 @@ const Card = ({ item, onClose }) => (
 
     <div className="flex w-full flex-row">
       <div className="w-2/5 mt-12 md:w-2/5 pr-4">
-        <img className="md:h-48 rounded-t-lg" src={item.image} alt="image" />
+        <img className="md:h-48 rounded-t-lg" src={urlFor(item.photo)} alt="image" />
         <div className="flex flex-col justify-center items-center w-full p-3 text-center">
           <p className="text-sm md:text-center text-black text-2xl font-medium font-['Helvetica Neue']">
             {item.name}
@@ -105,18 +59,9 @@ const Card = ({ item, onClose }) => (
       </div>
 
       <div className="w-4/5 md:w-3/4 mt-12 pl-4">
-        <span className="text-xs sm:text-mtext-zinc-600 md:text-xs lg:text-mtext-zinc-600 xl:text-xl font-['Helvetica Neue']">
-          At{" "}
-        </span>
-        <span className="text-orange-500 text-xl font-medium font-['Helvetica Neue']">
-          Startup School{" "}
-        </span>
+        
         <span className="text-xs text-mtext-zinc-600 md:text-xl font-['Helvetica Neue']">
-          We believe in the power of every idea and the potential within every
-          individual. Our mission is to bridge the gap between aspiring
-          entrepreneurs and their dreams. With a focus on mentorship and
-          practical learning, we are here to guide beginners on a transformative
-          journey to becoming successful founders.
+          {item.about}
         </span>
       </div>
     </div>
@@ -126,16 +71,18 @@ const Card = ({ item, onClose }) => (
 export default function MentorsNew() {
   // Conditionally apply classes to body based on card state
   const [mentordata, setMentorata] = useState([])
+  const [popupdata, setPopupdata] = useState(null)
   const [isCardOpen, setCardOpen] = useState(false);
   const [position, setPosition] = useState({ top: 0, left: 0 });
   const targetRef = useRef(null);
 
-  const handleDivClick = (event) => {
+  const handleDivClick = (event,data) => {
     const rect = event.target.getBoundingClientRect();
     const top = rect.top + window.scrollY;
     const left = rect.left + window.scrollX;
 
     setPosition({ top, left });
+    setPopupdata(data);
     setCardOpen(!isCardOpen);
   };
 
@@ -197,7 +144,7 @@ export default function MentorsNew() {
           Meet Our Experts
         </div>
 
-        <div className="mr-12 md:flex flex-row h-92  w-2/3 justify-center  ">
+        <div className="relative mr-12 md:flex flex-row h-92  w-2/3 justify-center  ">
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             slidesPerView={noSlides}
@@ -207,19 +154,19 @@ export default function MentorsNew() {
             onSlideChange={() => console.log("slide change")}
             className="flex items-center max-sm:ml-12 max-md:ml-32"
           >
-            {data.map((item, index) => (
+            {mentordata.map((item, index) => (
               <SwiperSlide
                 key={index}
                 className="flex items-center justify-center"
               >
                 <div
-                  onClick={handleDivClick}
+                  onClick={(event) =>  handleDivClick(event,item)}
                   ref={targetRef}
                   className="m-0 mb-10  sm:flex flex-col items-center w-48 h-full "
                 >
                   <img
                     className="h-44 md:ml-4 w-44 mt-8 rounded-full ring-2 ring-gray-400 ring-offset-4"
-                    src={item.image}
+                    src={urlFor(item.photo)}
                     alt="image"
                   />
 
@@ -234,7 +181,7 @@ export default function MentorsNew() {
             ))}
           </Swiper>
           {isCardOpen && (
-            <Card item={data[0]} onClose={closeCard} position={position} />
+            <Card item={popupdata} onClose={closeCard} position={position} />
           )}
         </div>
       </section>
