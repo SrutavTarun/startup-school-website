@@ -5,6 +5,8 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import {client} from '../client'
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -123,7 +125,7 @@ const Card = ({ item, onClose }) => (
 
 export default function MentorsNew() {
   // Conditionally apply classes to body based on card state
-
+  const [mentordata, setMentorata] = useState([])
   const [isCardOpen, setCardOpen] = useState(false);
   const [position, setPosition] = useState({ top: 0, left: 0 });
   const targetRef = useRef(null);
@@ -142,6 +144,24 @@ export default function MentorsNew() {
   };
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [noSlides, setNoSlides] = useState(1);
+
+  useEffect(() => {
+      
+    const fetchData = async () => {
+
+      //mentors
+      await client
+        .fetch(`*[_type == "mentors"] | order(_createdAt desc)`)
+        .then((data) => {
+          // console.log(data);
+          setMentorata(data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    };
+    fetchData();
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
