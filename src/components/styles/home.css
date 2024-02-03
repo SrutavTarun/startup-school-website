@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@100&display=swap");
+
+.home{
+    background-image: url("../../assets/home1.png");
+    /* width: 100%; */
+}
+
+.home-white-box{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.3));
+    padding: 8em 4em 4em 4em;
+    margin: 0em 5.5em 8em 5.5em;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-text-1{
+    color: black;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.5rem; 
+    margin: 1.5em 3em 0em 3em;
+}
+
+.home-Startup-School{
+    color: #F56E0F;
+}
+
+.home-text-2{
+    color: black;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;    
+    margin: 0.8em 15em 0em 15em;
+}
+
+.home-button{
+    background-color: #F56E0F;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 1.6em;
+    text-align: center;
+    width: fit-content;
+    padding: 0.5em 2em 0.5em 2em;
+    border-radius: 0em;
+    margin: 2em auto 3em auto;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.home-button:hover{
+    background-color: #262626;
+}
+
+@media screen and (max-width: 1024px){
+    .home-white-box{
+        margin: 0em 3em 8em 3em;
+        padding: 8em 2em 4em 2em;
+    }
+    .home-text-1{
+        font-size: 3rem;
+        line-height: 3.5rem; 
+        margin: 1.5em 0em 1em 0em;
+    }
+    .home-text-2{
+        font-size: 1em;    
+        margin: 0.8em 1em 0em 1em;
+    }
+    .home-button{
+        font-size: 1.5em;
+        padding: 0.5em 1em 0.5em 1em;
+        margin: 3em auto 1.5em auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .home-text-1{
+        font-size: 2rem;
+        line-height: 2.5rem; 
+        margin: 1.5em 0em 1em 0em;
+    }
+    .home-text-2{
+        font-size: 0.8em;    
+        margin: 0.8em 1em 0em 1em;
+    }
+    .home-button{
+        font-size: 1em;
+        padding: 0.5em 1em 0.5em 1em;
+        margin: 3em auto 1.5em auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .home-white-box{
+        margin: 0em 1em 8em 1em;
+        padding: 7em 0 4em 0;
+    }
+    .home-text-1{
+        font-size: 1.5rem;
+        line-height: 2rem; 
+        margin: 1.5em 0em 1em 0em;
+    }
+    .home-text-2{
+        font-size: 0.8em;    
+        margin: 0.8em 1em 0em 1em;
+    }
+    .home-button{
+        font-size: 1em;
+        padding: 0.5em 1em 0.5em 1em;
+        margin: 3em auto 1.5em auto;
+    }
+}

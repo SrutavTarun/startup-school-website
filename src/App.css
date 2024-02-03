@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .helvetic-nue {
     font-family: 'Helvetica Neue', sans-serif;
                                                 

@@ -1,4 +1,5 @@
 import { useContext, useEffect } from "react";
+import Navbar from "./components/Navbar";
 import Home from './components/Home'
 import About from './components/About'
 import Programs from './components/Programs'
@@ -8,8 +9,9 @@ import ProgramsNew from "./components/ProgramsNew";
 import Faq from './components/Faq'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import './App.css'
 import Highlights from './components/Highlights'
+
+import './App.css'
 
 
 
@@ -18,9 +20,10 @@ function App() {
   return (
     <>
     <div className='flex flex-col w-screen'>
-    {/* <h1>hello</h1>
+    {/* <h1>hello</h1> */}
+      <Navbar/>
       <Home/>
-      <About/> */}
+      <About/>
       <ProgramsNew/>
       <Highlights/>
       <MentorsNew />

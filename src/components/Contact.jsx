@@ -28,7 +28,7 @@ export default function Contact() {
 
   return (
     
-      <div style={bg} className="w-full flex flex-col items-center justify-center ">
+      <div style={bg} className="w-full flex flex-col items-center justify-center " id="contact">
         <p style={textOrange} className='my-4 helvetic-nue text-orange-500 text-2xl md:text-3xl tracking-wider text-center'>CONTACT</p>
         <p style={textWhite} className='mb-3 space-grotesk text-white font-bold text-3xl md:text-4xl lg:text-5xl text-center leading-8 lg:leading-10'>Any further queries ?</p>
 
