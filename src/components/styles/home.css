@@ -49,8 +49,34 @@
     margin: 2em auto 3em auto;
     border: none;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .home-button:hover{
     background-color: #262626;
+}
+
+@media screen and (max-width: 760px){
+    
+}
+
+@media screen and (max-width: 640px) {
+    .home-white-box{
+        margin: 0em 1em 8em 1em;
+        padding: 7em 0 4em 0;
+    }
+    .home-text-1{
+        font-size: 1.5rem;
+        line-height: 2rem; 
+        margin: 1.5em 0em 1em 0em;
+    }
+    .home-text-2{
+        font-size: 0.8em;    
+        margin: 0.8em 1em 0em 1em;
+    }
+    .home-button{
+        font-size: 1em;
+        padding: 0.5em 1em 0.5em 1em;
+        margin: 3em auto 1.5em auto;
+    }
 }

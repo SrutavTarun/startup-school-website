@@ -4,7 +4,7 @@ import "./styles/home.css";
 export default function Home() {
   return (
     <>
-      <div className="home w-full h-full bg-cover bg-center" style={{}}>
+      <div className="home w-full h-full bg-cover bg-center" id="home">
         <div className="home-white-box">
           <div className="home-text-1">
             From Beginner to Founder: Join{" "}

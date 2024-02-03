@@ -174,7 +174,7 @@ export default function Mentors() {
   return (
     <>
       <section className="h-screen w-full flex flex-col items-center mt-20">
-        <div className="text-center text-orange-500 text-[25px] font-medium font-['Helvetica Neue'] tracking-[2.50px]">
+        <div className="text-center text-orange-500 text-[25px] font-medium font-['Helvetica Neue'] tracking-[2.50px]" id="mentors">
           Mentors
         </div>
         <div className="text-center  text-black md:text-[52px] font-bold font-['Space Grotesk']">
