@@ -6,7 +6,7 @@ function Highlights() {
     <>
       <div id="highlights">
         <div className="high-title">HIGHLIGHTS</div>
-        <div className="high-sub">Why Choose US?</div>
+        <div className="high-sub">What's in it for you?</div>
         <div className="high-container">
           <div className="high-box">
             <div className="high-head">Experined Faculty</div>

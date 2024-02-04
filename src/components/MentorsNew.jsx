@@ -26,10 +26,10 @@ const urlFor = (source) => {
 
 // eslint-disable-next-line react/prop-types
 const Card = ({ item, onClose }) => (
-  <div className="absolute bg-[#ffffff] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 shadow-lg rounded-md z-50 w-full max-w-2xl overflow-y: auto">
+  <div className="absolute bg-[#ffffff] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 shadow-lg rounded-md z-50 w-[350px] md:w-full md:max-w-5xl overflow-y: auto">
     <div className="bg-neutral-800 w-full h-10 flex flex-row justify-between">
       <div className="m-2 text-center text-neutral-400 text-2xl font-medium font-['Helvetica Neue']">
-        Mentor
+        {item.name}
       </div>
       <button
         onClick={onClose}
@@ -40,23 +40,7 @@ const Card = ({ item, onClose }) => (
     </div>
 
     <div className="flex w-full flex-row">
-      <div className="w-2/5 mt-12 md:w-2/5 pr-4">
-        <img className="md:h-48 rounded-t-lg" src={urlFor(item.photo)} alt="image" />
-        <div className="flex flex-col justify-center items-center w-full p-3 text-center">
-          <p className="text-sm md:text-center text-black text-2xl font-medium font-['Helvetica Neue']">
-            {item.name}
-          </p>
-          <p className="text-sm md:text-center text-neutral-400 text-md font-medium font-['Helvetica Neue']">
-            {item.position}
-          </p>
-          <p className="text-sm md:text-center text-neutral-400 text-md font-medium font-['Helvetica Neue']">
-            {item.designation}
-          </p>
-          <p className="text-sm md:text-center text-neutral-400 text-md font-medium font-['Helvetica Neue']">
-            {item.company}
-          </p>
-        </div>
-      </div>
+      
 
       <div className="w-4/5 md:w-3/4 mt-12 pl-4">
         
@@ -98,7 +82,7 @@ export default function MentorsNew() {
 
       //mentors
       await client
-        .fetch(`*[_type == "mentors"] | order(_createdAt desc)`)
+        .fetch(`*[_type == "mentors"] | order(_createdAt asc)`)
         .then((data) => {
           // console.log(data);
           setMentorata(data);
