@@ -25,7 +25,7 @@ export default function ProgramsNew() {
   return (
     <div className='flex flex-col h-  md:min-h-[80vh] justify-center my-20'>
     <div className='flex flex-col justify-between items-center md:min-h-[65vh]'>
-        <div className="text-ttOrange uppercase font-semibold tracking-widest">Programs</div>
+        <div className="text-ttOrange uppercase font-semibold tracking-widest">Program Schedule</div>
         <div className="space-grotesk text-[45px] w-2/3 text-center font-bold mt-4 max-sm:text-3xl max-md:text-3xl max-lg:text-3xl">Are you budding founder? We have the perfect program for you.</div>
         <div className='flex w-3/4 md:w-2/4  justify-center mt-10'>
         
@@ -41,7 +41,7 @@ export default function ProgramsNew() {
         <div className='flex md:flex-row flex-col  h-full pb-5 justify-start '>
               <img className=' w-2/3 md:w-auto md:h-48 rounded-lg' src={demo1} alt="image" />
               <div className='flex  flex-col w-2/3  px-3'>
-                <p className='text-md font-bold'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type </p>
+                <p className='text-md font-bold'>Accelerate your startup's journey in our 2-month program! From ideation to funding, our expert-led weekly sessions provide hands-on insights. Join us to ignite, build, and thrive. Check out the detailed schedule for a week-by-week breakdown!</p>
                 <p className='text-xs font-light'> </p>
               </div>
             </div>
@@ -56,7 +56,7 @@ export default function ProgramsNew() {
         <div className='flex md:flex-row flex-col  h-full pb-5 justify-start '>
               <img className=' w-2/3 md:w-auto md:h-48 rounded-lg' src={demo1} alt="image" />
               <div className='flex  flex-col w-2/3  px-3'>
-                <p className='text-md font-bold'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type </p>
+                <p className='text-md font-bold'>Accelerate your startup's journey in our 2-month program! From ideation to funding, our expert-led weekly sessions provide hands-on insights. Join us to ignite, build, and thrive. Check out the detailed schedule for a week-by-week breakdown!</p>
                 <p className='text-xs font-light'> </p>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function ProgramsNew() {
         <div className='flex md:flex-row flex-col  h-full pb-5 justify-start '>
               <img className=' w-2/3 md:w-auto md:h-48 rounded-lg' src={demo1} alt="image" />
               <div className='flex  flex-col w-2/3  px-3'>
-                <p className='text-md font-bold'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type </p>
+                <p className='text-md font-bold'>Accelerate your startup's journey in our 2-month program! From ideation to funding, our expert-led weekly sessions provide hands-on insights. Join us to ignite, build, and thrive. Check out the detailed schedule for a week-by-week breakdown!</p>
                 <p className='text-xs font-light'> </p>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function ProgramsNew() {
         <div className='flex md:flex-row flex-col  h-full pb-5 justify-start '>
               <img className=' w-2/3 md:w-auto md:h-48 rounded-lg' src={demo1} alt="image" />
               <div className='flex  flex-col w-2/3  px-3'>
-                <p className='text-md font-bold'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type </p>
+                <p className='text-md font-bold'>Accelerate your startup's journey in our 2-month program! From ideation to funding, our expert-led weekly sessions provide hands-on insights. Join us to ignite, build, and thrive. Check out the detailed schedule for a week-by-week breakdown!</p>
                 <p className='text-xs font-light'> </p>
               </div>
             </div>
@@ -101,7 +101,7 @@ export default function ProgramsNew() {
         <div className='flex md:flex-row flex-col  h-full pb-5 justify-start '>
               <img className=' w-2/3 md:w-auto md:h-48 rounded-lg' src={demo1} alt="image" />
               <div className='flex  flex-col w-2/3  px-3'>
-                <p className='text-md font-bold'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type </p>
+                <p className='text-md font-bold'>Accelerate your startup's journey in our 2-month program! From ideation to funding, our expert-led weekly sessions provide hands-on insights. Join us to ignite, build, and thrive. Check out the detailed schedule for a week-by-week breakdown!</p>
                 <p className='text-xs font-light'> </p>
               </div>
             </div>
