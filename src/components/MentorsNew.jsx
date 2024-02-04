@@ -5,8 +5,9 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import {client} from '../client'
+import { client } from "../client";
 import imageUrlBuilder from "@sanity/image-url";
+import { IoLogoLinkedin } from "react-icons/io";
 
 // Import Swiper styles
 import "swiper/css";
@@ -14,15 +15,12 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-
 const builder = imageUrlBuilder(client);
 
 const urlFor = (source) => {
   // console.log(builder.image(source).url());
   return builder.image(source);
 };
-
-
 
 // eslint-disable-next-line react/prop-types
 const Card = ({ item, onClose }) => (
@@ -40,10 +38,7 @@ const Card = ({ item, onClose }) => (
     </div>
 
     <div className="flex w-full flex-row">
-      
-
       <div className="w-4/5 md:w-3/4 mt-12 pl-4">
-        
         <span className="text-xs text-mtext-zinc-600 md:text-xl font-['Helvetica Neue']">
           {item.about}
         </span>
@@ -54,13 +49,13 @@ const Card = ({ item, onClose }) => (
 
 export default function MentorsNew() {
   // Conditionally apply classes to body based on card state
-  const [mentordata, setMentorata] = useState([])
-  const [popupdata, setPopupdata] = useState(null)
+  const [mentordata, setMentorata] = useState([]);
+  const [popupdata, setPopupdata] = useState(null);
   const [isCardOpen, setCardOpen] = useState(false);
   const [position, setPosition] = useState({ top: 0, left: 0 });
   const targetRef = useRef(null);
 
-  const handleDivClick = (event,data) => {
+  const handleDivClick = (event, data) => {
     const rect = event.target.getBoundingClientRect();
     const top = rect.top + window.scrollY;
     const left = rect.left + window.scrollX;
@@ -77,9 +72,7 @@ export default function MentorsNew() {
   const [noSlides, setNoSlides] = useState(1);
 
   useEffect(() => {
-      
     const fetchData = async () => {
-
       //mentors
       await client
         .fetch(`*[_type == "mentors"] | order(_createdAt asc)`)
@@ -144,11 +137,12 @@ export default function MentorsNew() {
                 className="flex items-center justify-center"
               >
                 <div
-                  onClick={(event) =>  handleDivClick(event,item)}
+                  
                   ref={targetRef}
                   className="m-0 mb-10  sm:flex flex-col items-center w-48 h-full "
                 >
                   <img
+                    onClick={(event) => handleDivClick(event, item)}
                     className="h-44 md:ml-4 w-44 mt-8 rounded-full ring-2 ring-gray-400 ring-offset-4"
                     src={urlFor(item.photo)}
                     alt="image"
@@ -159,6 +153,14 @@ export default function MentorsNew() {
                     <p className="text-xs text-neutral-500 font-medium">
                       {item.position}
                     </p>
+                    <a
+                      href={`${item.linkedin}/`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-2"
+                    >
+                      <IoLogoLinkedin size="1.5em" color="blue" />
+                    </a>
                   </div>
                 </div>
               </SwiperSlide>
