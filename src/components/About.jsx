@@ -1,4 +1,5 @@
 import React from 'react'
+import "./styles/home.css";
 
 export default function About() {
   return (
@@ -20,7 +21,11 @@ export default function About() {
         At <span className='text-[#F56E0F]'>Startup School</span> , we believe in the power of every idea and the potential within every individual. Our <br /> mission is to bridge the gap between aspiring entrepreneurs and their dreams. With a focus on <br /> mentorship and practical learning, we are here to guide beginners on a transformative journey to <br /> become successful founders.
         </p>
       </div>
+      
     </div>
+    <a href="https://forms.gle/mgSejibwVNzxDU818" target="_blank">
+            <div className="home-button">REGISTER NOW</div>
+          </a>
     </div>
     
   )
