@@ -9,7 +9,7 @@ function Highlights() {
         <div className="high-sub">What's in it for you?</div>
         <div className="high-container">
           <div className="high-box">
-            <div className="high-head">Experined Faculty</div>
+            <div className="high-head">Experienced Faculty</div>
             <div className="high-text">
               Learn from industry experts and successful entrepreneurs who bring
               real-world insights to the classroom.
