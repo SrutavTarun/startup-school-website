@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 import "./styles/navbar.css";
@@ -11,9 +11,20 @@ export default function Navbar() {
     setMobileView(!mobileView);
   };
 
+  const [navbarTop, setNavbarTop] = useState("0");
+
+  useEffect(() => {
+    let prevScrollpos = window.scrollY;
+    window.onscroll = function() {
+      let currentScrollPos = window.scrollY;
+      setNavbarTop(prevScrollpos > currentScrollPos ? "0" : "-120px");
+      prevScrollpos = currentScrollPos;
+    };
+  }, []);
+
   return (
     <>
-      <div class="navbar">
+      <div class="navbar" style={{ top: navbarTop }}>
         <div className="navbar-not-mobile">
           <div className="nav-logo">
             <img src={Logo} alt="logo" />

@@ -1,0 +1,105 @@
+.ProgramsNew2{
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto 7em auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #ddd;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -7px;
+}
+
+.program-schedule {
+    color: #F56E0F;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 2em auto 3em auto;
+}
+
+.session {
+    padding: 10px 40px 30px 40px;
+    position: relative;
+    width: 50%;
+}
+
+.session::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left{
+    margin: 0 0 0 auto;
+}
+
+.left::after {
+    left: -17px;
+}
+
+.right{
+    margin: 0 auto 0 0;
+}
+
+.right::after {
+    right: -8px;
+}
+
+.session-image {
+    width: 100%;
+    height: auto;
+}
+
+.session-details {
+    padding: 10px;
+}
+
+.session-name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.session-description {
+    margin-top: 0px;
+}
+
+.session-date {
+    font-size: 14px;
+    color: #bbb;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 640px){
+    .timeline::after {
+        left: 31px;
+    }
+
+    .right, .left{
+        margin: 0 0 0 2em;
+    }
+
+    .right::after, .left::after {
+        left: -17px;
+    }
+
+    .session{
+        width: 90%;
+    }
+}
