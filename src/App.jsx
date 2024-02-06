@@ -5,7 +5,7 @@ import About from './components/About'
 import Programs from './components/Programs'
 import MentorsNew from './components/MentorsNew'
 import ProgramsNew from "./components/ProgramsNew";
-
+import ProgramsNew2 from "./components/ProgramsNew2";
 import Faq from './components/Faq'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -20,11 +20,10 @@ function App() {
   return (
     <>
     <div className='flex flex-col w-screen'>
-    {/* <h1>hello</h1> */}
       <Navbar/>
       <Home/>
       <About/>
-      <ProgramsNew/>
+      <ProgramsNew2/>
       <Highlights/>
       <MentorsNew />
       <Faq/>
