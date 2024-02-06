@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Space+Grotesk:wght@700&display=swap");
+
+.About {
+  font-family: "Open sans";
+}
+
+.about-heading{
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    .about-heading{
+        font-size: 1.3em;
+        line-height: 1em;
+    }
+}

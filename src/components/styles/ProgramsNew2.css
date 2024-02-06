@@ -154,4 +154,8 @@
     .session{
         width: 90%;
     }
+
+    .session-name{
+        font-size: 18px;
+    }
 }

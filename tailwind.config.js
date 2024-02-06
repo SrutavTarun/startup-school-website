@@ -8,7 +8,12 @@ export default {
     colors: {
       ttOrange: '#F56E0F',
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'space-grotesk': ['Space Grotesk', 'sans-serif'],
+        'open-sans': ['Open Sans', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

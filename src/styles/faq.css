@@ -19,5 +19,5 @@
 	line-height: 66px;
 	letter-spacing: 0;
 	text-align: center;
-	@apply text-center font-bold mx-24 max-sm:text-[30px] max-sm:mx-[10%];
+	@apply text-center font-bold mx-24 max-sm:text-[30px] max-sm:mx-[10%] max-sm:leading-tight;
 }
