@@ -16,7 +16,10 @@ export default function Home() {
             the way. Turn your ideas into reality - let's build your startup
             together!
           </div>
-          <div className="home-button">GET STARTED</div>
+          <a href="https://forms.gle/mgSejibwVNzxDU818" target="_blank">
+            <div className="home-button">REGISTER NOW</div>
+          </a>
+          
         </div>
       </div>
     </>

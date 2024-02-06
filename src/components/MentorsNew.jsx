@@ -114,7 +114,7 @@ export default function MentorsNew() {
   return (
     <>
       <section className="h-screen w-full flex flex-col items-center mt-20">
-        <div className="text-center text-orange-500 text-[25px] font-medium font-['Helvetica Neue'] tracking-[2.50px]">
+        <div className="text-center text-ttOrange  text-[25px] font-medium font-['Helvetica Neue'] tracking-[2.50px]">
           Mentors
         </div>
         <div className="text-center  text-black md:text-[52px] font-bold font-['Space Grotesk']">
@@ -152,6 +152,9 @@ export default function MentorsNew() {
                     <p className="text-md text-ne font-bold">{item.name}</p>
                     <p className="text-xs text-neutral-500 font-medium">
                       {item.position}
+                    </p>
+                    <p className="text-sm text-neutral-500 font-medium uppercase">
+                      {item.company}
                     </p>
                     <a
                       href={`${item.linkedin}/`}
