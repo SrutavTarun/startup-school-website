@@ -42,11 +42,10 @@
     content: attr(data-date) " " attr(data-month);
     white-space: pre-wrap;
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-family: 'Space Grotesk', sans-serif;
     line-height: 1.3em;
     text-align: center;
-    vertical-align: middle;
     position: absolute;
     width: 70px;
     height: 70px;
