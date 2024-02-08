@@ -43,7 +43,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link to="programs" smooth={true} offset={-120} duration={500}>
-                  Programs
+                  Schedule
                 </Link>
               </li>
               <li>
