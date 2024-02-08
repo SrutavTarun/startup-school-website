@@ -1,13 +1,9 @@
 import React, { useState } from "react";
-import demo1 from "../assets/demo.png";
-import demo2 from "../assets/demo2.webp";
 import close from "../assets/close.svg";
 import "./styles/ProgramsNew2.css";
 
 export default function ProgramsNew2() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedSession, setSelectedSession] = useState(null);
-
+  
   const sessions = [
     {
       name: "Registration starts",
@@ -35,7 +31,7 @@ export default function ProgramsNew2() {
       handler: "Jolly Jose",
       date: "01/03/24",
       details:
-        "The validation of your ideas and learning how to present and set them up in the arena of entrepreneurship and business are the keys to a successful startup. Explore the role of idea validation through effective hands-on sessions focused on ideation and brainstorming techniques. Strengthen your knowledge of prototyping and use it to refine your innovative ideas. Get to know how to implement your ideas in the world of business with a thorough understanding of the business model canvas (BMC).",
+      "The validation of your ideas and learning how to present and set them up in the arena of entrepreneurship and business are the keys to a successful startup. Explore the role of idea validation through effective hands-on sessions focused on ideation and brainstorming techniques. Strengthen your knowledge of prototyping and use it to refine your innovative ideas. Get to know how to implement your ideas in the world of business with a thorough understanding of the business model canvas (BMC).",
         month: "MAR",
     },
     {
@@ -51,15 +47,15 @@ export default function ProgramsNew2() {
       handler: "Arun Pandi",
       date: "15/03/24",
       details:
-        "To thrive, businesses must segment their audience and tailor offerings accordingly. Effective Go-to-Market (GTM) strategies are essential, involving messaging, pricing, distribution, and promotion to reach customers effectively. Implementing customer acquisition tactics across digital, social, and traditional channels is vital. Key takeaways include precise targeting, crafting compelling messaging, and adapting strategies based on feedback and metrics.",
-        month: "MAR",
+      "To thrive, businesses must segment their audience and tailor offerings accordingly. Effective Go-to-Market (GTM) strategies are essential, involving messaging, pricing, distribution, and promotion to reach customers effectively. Implementing customer acquisition tactics across digital, social, and traditional channels is vital. Key takeaways include precise targeting, crafting compelling messaging, and adapting strategies based on feedback and metrics.",
+      month: "MAR",
     },
     {
       name: "Founders Story",
       handler: "Abdul Rahiman Dilshaad",
       date: "16/03/24",
       details:
-        "Gain insights and inspiration from the personal journey and experiences of Abdul Rahiman Dilshaad, a successful entrepreneur. Learn from their challenges, triumphs, and valuable lessons along the path of startup creation and growth.",
+      "Gain insights and inspiration from the personal journey and experiences of Abdul Rahiman Dilshaad, a successful entrepreneur. Learn from their challenges, triumphs, and valuable lessons along the path of startup creation and growth.",
         month: "MAR",
     },
     {
@@ -67,8 +63,8 @@ export default function ProgramsNew2() {
       handler: "Junaid Ahammed",
       date: "22/03/24",
       details:
-        "This session underscores the importance of a compelling pitch deck in attracting investors. Participants will learn key elements and structures for effective pitch decks through hands-on exercises, refining their skills in crafting persuasive narratives that communicate their startup's value proposition clearly.",
-        month: "MAR",
+      "This session underscores the importance of a compelling pitch deck in attracting investors. Participants will learn key elements and structures for effective pitch decks through hands-on exercises, refining their skills in crafting persuasive narratives that communicate their startup's value proposition clearly.",
+      month: "MAR",
     },
     {
       name: "Founders Story",
@@ -82,16 +78,16 @@ export default function ProgramsNew2() {
       handler: "Mittu Tiggi",
       date: "30/03/24",
       details:
-        "In a dynamic startup ecosystem, cultivating a supportive network is paramount. Engage with like-minded individuals, share insights, and foster relationships that go beyond mere connections. A thriving community isn't just a resource; it's a cornerstone for sustainable startup success. Embrace the power of collaboration and shared goals, for within this support lies the key to unlocking a startup's true potential. Leverage this network as a catalyst for gaining opportunities and feedback, attracting partnerships, and accessing a diverse skill set.",
+      "In a dynamic startup ecosystem, cultivating a supportive network is paramount. Engage with like-minded individuals, share insights, and foster relationships that go beyond mere connections. A thriving community isn't just a resource; it's a cornerstone for sustainable startup success. Embrace the power of collaboration and shared goals, for within this support lies the key to unlocking a startup's true potential. Leverage this network as a catalyst for gaining opportunities and feedback, attracting partnerships, and accessing a diverse skill set.",
         month: "MAR",
-    },
-    {
+      },
+      {
       name: "Financial Planning for Startups",
       handler: "Krutika Ravishankar",
       date: "05/04/24",
       details:
-        "Master the basics by creating robust budgets, precise forecasts, and efficient financial management. Learn to allocate resources judiciously, thereby ensuring optimal operations. Explore diverse funding options, as financial sustainability is important for gaining resilience and attractiveness to potential investors. Dive into the world of financial planning. Start smart, stay resilient, embrace the art of budgeting and managing finances, and thrive in the competitive startup ecosystem.",
-        month: "APR",
+      "Master the basics by creating robust budgets, precise forecasts, and efficient financial management. Learn to allocate resources judiciously, thereby ensuring optimal operations. Explore diverse funding options, as financial sustainability is important for gaining resilience and attractiveness to potential investors. Dive into the world of financial planning. Start smart, stay resilient, embrace the art of budgeting and managing finances, and thrive in the competitive startup ecosystem.",
+      month: "APR",
     },
     {
       name: "Building a Minimum Viable Product (MVP)",
@@ -108,13 +104,13 @@ export default function ProgramsNew2() {
       details:
         "Gain insights and inspiration from the personal journey and experiences of Yamuna K, a successful entrepreneur. Learn from their challenges, triumphs, and valuable lessons along the path of startup creation and growth.",
         month: "APR",
-    },
+      },
     {
       name: "The art of Fund Raising",
       handler: "Manu Francis",
       date: "16/04/24",
       details:
-        "Fundraising as we know is an important aspect of startups. From the very beginning of a startup initiative, capital plays a critical role. Each option of fundraising has its own advantages, risks, and considerations. A compelling fundraising strategy is essential for attracting investors. It involves thoroughly understanding the business's financial needs, setting realistic goals, and presenting a clear and compelling business plan. Successful fundraising requires adaptive navigation of investor meetings and negotiations. Entrepreneurs should be well-prepared to articulate their vision, address potential concerns, and showcase the startup's potential for growth.",
+      "Fundraising as we know is an important aspect of startups. From the very beginning of a startup initiative, capital plays a critical role. Each option of fundraising has its own advantages, risks, and considerations. A compelling fundraising strategy is essential for attracting investors. It involves thoroughly understanding the business's financial needs, setting realistic goals, and presenting a clear and compelling business plan. Successful fundraising requires adaptive navigation of investor meetings and negotiations. Entrepreneurs should be well-prepared to articulate their vision, address potential concerns, and showcase the startup's potential for growth.",
         month: "APR",
     },
     {
@@ -134,6 +130,9 @@ export default function ProgramsNew2() {
     },
   ];
 
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedSession, setSelectedSession] = useState(null);
+  
   const handleSessionClick = (session) => {
     setSelectedSession(session);
     setIsOpen(true);
@@ -142,7 +141,7 @@ export default function ProgramsNew2() {
   const handleClose = () => {
     setIsOpen(false);
   };
-
+  
   return (
     <div className="ProgramsNew2" id="programs">
       <div className="program-schedule text-xl md:text-3xl text-[#F56E0F]">
