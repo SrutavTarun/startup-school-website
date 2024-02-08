@@ -51,7 +51,7 @@ export default function Navbar() {
                   Highlights
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="contact"
                   smooth={true}
@@ -61,7 +61,7 @@ export default function Navbar() {
                 >
                   CONTACT
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
