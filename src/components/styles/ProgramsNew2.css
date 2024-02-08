@@ -10,7 +10,7 @@
 .timeline {
     position: relative;
     max-width: 1200px;
-    margin: 0 auto 7em auto;
+    margin: 0 auto 5em auto;
 }
 
 .timeline::after {
@@ -28,7 +28,15 @@
     color: #F56E0F;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    margin: 2em auto 3em auto;
+    margin: 2em auto 1em auto;
+}
+
+.program-schedule-subtext{
+    color: #5E5E5E;
+    font-family: "Open sans", sans-serif;
+    font-size: 1.1em;
+    max-width: 65%;
+    margin: 0 auto 2em auto;
 }
 
 .session {
@@ -145,9 +153,23 @@
         margin-top: 50px;
     }
 
+    .program-schedule-subtext{
+        max-width: 90%;
+        font-size: 0.9em;
+        margin-bottom: 4em;
+    }
+
+    .timeline{
+        margin-bottom: 0em;
+    }
+
     .timeline::after {
         left: 34px;
         margin-bottom: 4em;
+    }
+
+    .session{
+        font-size: 1em;
     }
 
     .session::after{
@@ -172,6 +194,7 @@
     }
 
     .session-name{
-        font-size: 18px;
+        font-size: 1.2em;
+        white-space: wrap;
     }
 }

@@ -8,16 +8,15 @@ export default function About() {
       <div>
         <h3 className='text-xl md:text-3xl text-[#F56E0F]'>
           ABOUT US
-        </h3>
-        
+        </h3>        
       </div>
       <div>
-        <h1 className="about-heading text-2xl md:text-5xl text-center leading-snug">
+        <h1 className="about-heading text-2xl md:text-5xl text-center leading-snug mt-3 mb-5 md:my-0">
         Your dreams skyrocket to <br/> reality here!
         </h1>
       </div>
       <div className=''>
-        <p className='text-sm md:text-lg text-[#5E5E5E] text-justify md:text-center md:max-w-[75%] mx-auto'>
+        <p className='text-sm md:text-lg text-[#5E5E5E] font-["Open Sans"] text-justify md:text-center md:max-w-[75%] mx-auto'>
         At <span className='text-[#F56E0F]'>Startup School</span> , we believe in the power of every idea and the potential within every individual. Our  mission is to bridge the gap between aspiring entrepreneurs and their dreams. With a focus on  mentorship and practical learning, we are here to guide beginners on a transformative journey to  become successful founders.
         </p>
       </div>
