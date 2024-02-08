@@ -147,6 +147,7 @@ export default function ProgramsNew2() {
       <div className="program-schedule text-xl md:text-3xl text-[#F56E0F]">
         Program Schedule
       </div>
+      <div className="program-schedule-subtext">Accelerate your startup's journey in our 2-month program! From ideation to funding, our expert-led weekly sessions provide hands-on insights. Join us to ignite, build, and thrive. Check out the detailed schedule for a week-by-week breakdown!</div>
       <div className="timeline">
         {sessions.map((session, index) => (
           <div
