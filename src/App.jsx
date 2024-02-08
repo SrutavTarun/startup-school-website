@@ -27,7 +27,7 @@ function App() {
       <Highlights/>
       <MentorsNew />
       <Faq/>
-      <Contact/>
+      {/* <Contact/> */}
       <Footer/>
     </div>
       
