@@ -119,7 +119,7 @@ export default function Navbar() {
                     Highlights
                   </Link>
                 </li>
-                <li class="contact-btn">
+                {/* <li class="contact-btn">
                   <Link
                     to="contact"
                     smooth={true}
@@ -129,7 +129,7 @@ export default function Navbar() {
                   >
                     CONTACT
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           )}
