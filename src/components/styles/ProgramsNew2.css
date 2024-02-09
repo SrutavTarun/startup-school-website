@@ -149,8 +149,13 @@
 }
 
 @media screen and (max-width: 640px){
+    body, html{
+        overflow-x: hidden;
+    }
+
     .ProgramsNew2{
         margin-top: 50px;
+        overflow-x: hidden;
     }
 
     .program-schedule-subtext{

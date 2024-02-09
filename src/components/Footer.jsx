@@ -42,11 +42,11 @@ export default function Footer() {
           </div>
           <div style={foot.container} className="justify-center items-center">
             <div style={foot.val} className="flex flex-col px-4 lg:px-10 mb-5 lg:mb-0">
-              <a style={textCol} className='hover:underline lg:mr-5' href="#">About us</a>
-              <a style={textCol} className='hover:underline lg:mr-5' href="#">Programs</a>
-              <a style={textCol} className='hover:underline lg:mr-5' href="#">Mentors</a>
-              <a style={textCol} className='hover:underline lg:mr-5' href="#">Team</a>
-              <a style={textCol} className='hover:underline' href="#">Contact</a>
+              <a style={textCol} className='hover:underline lg:mr-5' href="#about">About us</a>
+              <a style={textCol} className='hover:underline lg:mr-5' href="#programs">Programs</a>
+              <a style={textCol} className='hover:underline lg:mr-5' href="#highlights">Highlights</a>
+              <a style={textCol} className='hover:underline lg:mr-5' href="#faq">FAQ</a>
+              {/* <a style={textCol} className='hover:underline' href="#">Contact</a> */}
             </div>
             <div style={foot.val} className="flex flex-col px-4 lg:px-10 ">
               <a style={textCol} className='hover:underline lg:mr-5' href="#">LinkedIn</a>
