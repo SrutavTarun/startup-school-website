@@ -5,7 +5,7 @@ import faqData from "../data/faqData.js";
 export default function Faq() {
   return (
   <>
-    <h1 className="h1_font">FAQ</h1>
+    <h1 className="h1_font" id="faq">FAQ</h1>
     <h2 className="h2_font">Learn more about us</h2>
     <br/>
     <section>
