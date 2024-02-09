@@ -75,7 +75,7 @@ export default function MentorsNew() {
     const fetchData = async () => {
       //mentors
       await client
-        .fetch(`*[_type == "mentors"] | order(_createdAt asc)`)
+        .fetch(`*[_type == "mentors"] | order(order asc)`)
         .then((data) => {
           // console.log(data);
           setMentorata(data);
