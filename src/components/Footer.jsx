@@ -49,10 +49,10 @@ export default function Footer() {
               {/* <a style={textCol} className='hover:underline' href="#">Contact</a> */}
             </div>
             <div style={foot.val} className="flex flex-col px-4 lg:px-10 ">
-              <a style={textCol} className='hover:underline lg:mr-5' href="#">LinkedIn</a>
-              <a style={textCol} className='hover:underline lg:mr-5' href="#">Instagram</a>
-              <a style={textCol} className='hover:underline lg:mr-5' href="#">Twitter</a>
-              <a style={textCol} className='hover:underline' href="#">WhatsApp</a>
+              <a style={textCol} className='hover:underline lg:mr-5' href="https://www.linkedin.com/company/eeti-startupschool/" target='_blank'>LinkedIn</a>
+              <a style={textCol} className='hover:underline lg:mr-5' href="https://www.instagram.com/eeti_startupschool?igsh=c2I5NmJhZDczazJ4&utm_source=qr" target='_blank'>Instagram</a>
+              {/* <a style={textCol} className='hover:underline lg:mr-5' href="#">Twitter</a> */}
+              <a style={textCol} className='hover:underline' href="https://whatsapp.com/channel/0029Va4SNY9Bqbr630Au5p0W" target='_blank'>WhatsApp</a>
             </div>
           </div>
         </div>
